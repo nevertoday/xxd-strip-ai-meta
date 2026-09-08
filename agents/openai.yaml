@@ -1,0 +1,7 @@
+interface:
+  display_name: "xxd-strip-ai-meta"
+  short_description: "Strip AI provenance from images"
+  default_prompt: "Use $xxd-strip-ai-meta to remove C2PA, AI provenance, and image metadata from selected image files or a directory."
+
+policy:
+  allow_implicit_invocation: true
