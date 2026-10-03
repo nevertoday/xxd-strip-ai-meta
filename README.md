@@ -2,7 +2,7 @@
 
 批量清除图片中的 AI 来源标记和元数据，可作为独立命令行工具或 AI Agent Skill 使用。
 
-通过 ExifTool 清理受支持的 C2PA / Content Credentials、OpenAI / gpt-image 来源信息，以及 EXIF、XMP、IPTC、注释等元数据。默认保留 ICC 色彩配置和文件修改时间，不解码、重编码图片像素。
+通过 ExifTool 清理受支持的 C2PA / Content Credentials、OpenAI / gpt-image 来源信息，以及 EXIF、XMP、IPTC、注释等元数据。保留图片显示方向，默认保留 ICC 色彩配置和文件修改时间，不解码、重编码图片像素。使用 `--drop-color-profile` 时仍保留显示方向。
 
 这是元数据清理工具：不能去除画面中可见的水印，也不能保证清除像素级隐形水印、平台指纹或服务器端标记。适用于隐私保护、内部处理与元数据整理，请勿用于误导他人对图片来源的判断。
 

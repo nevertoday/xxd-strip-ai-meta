@@ -17,6 +17,7 @@ Use `scripts/clean_image_provenance.py` for image files or directories. It:
 - Skips common files whose extension does not match their header, such as JPEG data saved as `.webp`.
 - Avoids image decode/re-encode so JPEG quality and PNG pixels are not recompressed.
 - Preserves ICC color profiles by default to reduce visible color shifts.
+- Preserves display orientation, including when `--drop-color-profile` is used.
 - Preserves filesystem modification time by default.
 - Verifies that C2PA/OpenAI/gpt/prompt/provenance markers are gone.
 
