@@ -238,6 +238,10 @@ def clean_files(
         *overwrite_flags,
         "-all=",
         *preserve_flags,
+        # Restore display orientation after deleting its containing metadata group.
+        "-tagsFromFile",
+        "@",
+        "-Orientation",
     ]
     groups = chunks(files, chunk_size)
     total = len(groups)
